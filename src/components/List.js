@@ -1,5 +1,6 @@
 import React from 'react';
 import ListItem from './ListItem';
+import { connect } from 'react-redux';
 
 export const List = (props) => (
     <div className='content-container'>
@@ -20,4 +21,10 @@ export const List = (props) => (
     </div>
 );
 
-export default List;
+const mapStateToProps = (state) => {
+    return {
+        items: state.list
+    }
+}
+
+export default connect(mapStateToProps)(List);

@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { addList } from '../actions/list';
 
 export class Form extends React.Component {
 
@@ -23,4 +25,10 @@ export class Form extends React.Component {
     }
 }
 
-export default Form;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        handleUpdate: (item) => dispatch(addList(item))
+    }
+}
+
+export default connect(undefined, mapDispatchToProps)(Form);
