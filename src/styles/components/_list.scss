@@ -1,9 +1,9 @@
 .list-header {
-    background: $off-white;
-    border: 1px solid darken($off-white, 7%);
-    color: $grey;
+    background: $light-blue;
+    border-bottom: .6rem solid darken($light-blue, 20%);
+    color: $off-white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: $s-size $m-size;
 }
 
@@ -15,8 +15,7 @@
 }
 
 .list-item {
-    border: 1px solid darken($off-white, 7%);
-    border-top: none;
+    background: $off-white;
     color: $dark-grey;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@
     text-decoration: none;
     transition: background .3s ease;
     &:hover {
-        background: $off-white;
+        background: $grey;
     }
     @media (min-width: $desktop-breakpoint) {
         align-items: center;

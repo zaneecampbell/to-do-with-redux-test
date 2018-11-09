@@ -1,16 +1,17 @@
 .header {
-    background: $dark-blue;
+    background: $light-blue;
+    border-bottom: .6rem solid darken($light-blue, 20%);
     padding: $s-size;
 }
 
 .header__content {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header__title {
-    color: white;
+    color: $off-white;
     text-decoration: none;
     h1 {
         margin: 0;
