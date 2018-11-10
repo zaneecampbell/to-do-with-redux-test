@@ -3,9 +3,9 @@ export const addList = (item) => ({
     item
 });
 
-export const removeList = (item) => ({
+export const removeList = (listText) => ({
     type: 'REMOVE',
-    item
+    listText
 });
 
 export const setList = () => ({

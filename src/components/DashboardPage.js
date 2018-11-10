@@ -24,7 +24,7 @@ class DashboardPage extends React.Component {
     return (
       <div>
         <Header />
-        <List handleRemove={this.handleRemove}/>
+        <List />
         <Form />
       </div>
     )

@@ -12,8 +12,7 @@ export const List = (props) => (
                     <ListItem
                     key={item + Math.random()}
                     listText={item}
-                    count={index + 1}
-                    handleRemove={props.handleRemove}
+                    count={index}
                     />
                 ))
             }

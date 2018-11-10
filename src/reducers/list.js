@@ -10,7 +10,7 @@ export default (state = listDefaultState, action) => {
         action.item
       ];
     case 'REMOVE':
-      return state.filter((item) => item !== action.item);
+      return state.filter((item) => item !== action.listText);
     default:
       return state;
   }
