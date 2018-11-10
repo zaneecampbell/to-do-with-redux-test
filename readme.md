@@ -1,7 +1,3 @@
-# Git Commands
+Practicing incorporating Redux overhead from my own to do list.
 
-git init - Create a new git repo
-git status - View the changes to your project code
-git add - Add files to staging area
-git commit - Creates a new commit with files from staging area
-git log - View recent commits
+yarn run dev-server    to run at localhost:8080
